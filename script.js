@@ -1,5 +1,5 @@
 // getTime() returned the number of miliseconds since the Unix Epoch (Jan 1, 1970 00:00:00 GMT)
-const premiereDate = new Date("June 22, 21 20:00:00 EST").getTime()
+const premiereDate = new Date("June 22, 21 21:00:00 EST").getTime()
 
 console.log(premiereDate)
 
@@ -13,19 +13,23 @@ let countdown = function(){
     const second = 1000
     const minute = second * 60
     const hour = minute * 60
-    const day = hour * 24
+    const days = hour * 24
 
     // math.floor rounds down to the nearest integer
-    // we then divide the the time variables by the variable inBetween
-    const secs = Math.floor(inBetween / second)
-    const mins = Math.floor(inBetween / minute)
-    const hrs = Math.floor(inBetween / hour)
-    const dys = Math.floor(inBetween / day)
+    // we then do math
+    const secs = Math.floor((inBetween % minute) / second)
+    const mins = Math.floor((inBetween % hour) / minute)
+    const hrs = Math.floor((inBetween % days) / hour)
+    const dys = Math.floor(inBetween / days)
 
-    console.log(rightNow)
-    console.log(inBetween)
+    console.log(dys, hrs, mins, secs)
 
-    console.log(secs, mins, hrs, dys)
+    // grab the ID from the html and input the countdown through the text
+    document.getElementById("day").innerText = dys
+    document.getElementById("hr").innerText = hrs
+    document.getElementById("min").innerText = mins
+    document.getElementById("sec").innerText = secs
 }
-
-countdown();
+setInterval(function(){
+    countdown();
+},1000)
