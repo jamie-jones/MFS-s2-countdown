@@ -36,23 +36,62 @@ width: 50%;
     margin: 0%;
     text-align:justify;
     display: flex;
-    padding-left: 80px;
+    /* padding-left: 80px; */
+    justify-content: center;
+}
+
+#countdown section{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: rgb(43, 41, 41);
+    margin: 0 15px;
+}
+
+#countdown section:before{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background:rgb(55, 141, 170);
+    line-height: 45px;
+    font-size:25px;
+    padding-top: -30px;
+}
+
+#countdown #day:before{
+    content: "Days";
+}
+#countdown #hr:before{
+    content: "Hours";
+}
+#countdown #min:before{
+    content: "Minutes";
+}
+#countdown #sec:before{
+    content: "Seconds";
 }
 
 #buttons{
-margin: 0;
-position: relative;
-left: 20%;
+margin-left: 60px;
+text-align: justify;
+justify-content: center;
+/* display:flex; */
+/* position:fixed; */
+padding-top: 50px;
 }
 
 .btn{
     background-color: rgb(41,75,85);
     color: white;
     border-radius: 50%;
-    padding: 10px;
-    width: 100px;
+    width: 125px;
     height: 50px;
-    align-content: center;
+    margin:auto;
 }
 
 #fanart{
