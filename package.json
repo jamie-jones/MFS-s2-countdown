@@ -1,0 +1,45 @@
+{
+    "name": "mfs2-countdown",
+    "version": "1.0.0",
+    "description": "The countdown to the season 2 premiere of Motherland: Fort Salem",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+      "start:prod": "node server.js",
+      "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+      "client": "cd client && npm run start",
+      "install": "cd client && npm install",
+      "build": "cd client && npm run build",
+      "heroku-postbuild": "npm run build"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jamjon94/MFS-s2-countdown.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jamjon94/MFS-s2-countdown/issues"
+    },
+    "homepage": "https://github.com/jamjon94/MFS-s2-countdown#readme",
+    "dependencies": {
+      "build": "^0.1.4",
+      "dotenv": "^8.2.0",
+      "emailjs-com": "^2.6.4",
+      "express": "^4.17.1",
+      "fs": "0.0.1-security",
+      "if-env": "^1.0.4",
+      "mongoose": "^5.11.7",
+      "path": "^0.12.7",
+      "prop-types": "^15.7.2",
+      "react": "^17.0.1",
+      "react-copy-to-clipboard": "^5.0.2",
+      "react-router-dom": "^5.2.0",
+      "write-file-p": "^1.0.8"
+    },
+    "devDependencies": {
+      "concurrently": "^5.3.0"
+    }
+  }
