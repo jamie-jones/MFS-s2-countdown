@@ -1,0 +1,8 @@
+{
+    "name": "MFScountdown",
+    "description": "The countdown to the season 2 premiere of Motherland: Fort Salem",
+    "version": "1.0.0",
+    "engines": {
+      "node": "14.17.0"
+    }
+  }
