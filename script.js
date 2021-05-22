@@ -33,3 +33,7 @@ let countdown = function(){
 setInterval(function(){
     countdown();
 },1000)
+
+document.getElementById("panel0").setAttribute("src", "./test/tweetTest.html");
+document.getElementById("panel1").setAttribute("src", "./test/instaTest.html");
+document.getElementById("panel2").setAttribute("src", "./test/tumblrTest.html");
