@@ -1,10 +1,133 @@
 @media only screen and (max-width: 1024px) {
-    #container{
-        padding: 100px 30px;
+    body{
+        background-image: url(../images/countdown-bkgrd-mobile.jpg);
+        position: fixed;
     }
 
+    #container{
+        padding: 80px 10px;
+    }
 
-    #fanart, #fanart-info-section{
-        float: right;
+    #title{
+        font-size: 100px;
+        text-align: center;
+    }
+
+    #countdown{
+        position: absolute;
+        width: 100%;
+        padding-right: 10%;
+        font-size: 100px;
+    }
+
+    #countdown section{
+        width: 200px;
+        height: 150px;
+        padding-top: 15px;
+    }
+
+    #countdown section:before{
+        font-size: 4.5vw;
+    }
+
+    #countdown-section, #fanart-section{
+        width: 100%;
+    }
+
+    #fanart-section{
+        padding-top: 70px;
+        width: 900px;
+        height: auto;
+    }
+
+    #buttons{
+        height: 1px;
+        margin: auto;
+        padding: 190px 0px 50px 80px;
+        justify-content: center;
+    }
+
+    .button{
+        width: 250px;
+        height: 75px;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #container{
+        padding: 20px 0px;
+        width: 675px;
+    }
+
+    #title{
+        font-size: 70px;
+    }
+
+    #countdown{
+        position: absolute;
+        width: 100%;
+        padding-right: 100px;
+        font-size: 100px;
+    }
+
+    #countdown section{
+        width: 130px;
+        height: 130px;
+        padding-top: 10px;
+    }
+
+    #fanart-section{
+        padding-top: 70px;
+        padding-left: 40px;
+        width: 650px;
+        /* height: auto; */
+    }
+
+    .button{
+        width: 175px;
+        height: 75px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    body{
+        padding: 40px 0px;
+    }
+
+    #container{
+        padding: 10px 0px;
+        width: 414px;
+    }
+
+    #title{
+        font-size: 40px
+    }
+
+    #countdown{
+        font-size: 50px;
+        padding-right: 0px;
+        font-size: 50px;
+    }
+
+    #countdown section{
+        width: 100px;
+        height: 100px;
+        padding-top: 0px;
+    }
+
+    #countdown section:before{
+        font-size: 5vw;
+    }
+
+    #buttons{
+        padding: 145px 0px 0px 55px;
+    }
+
+    .button{
+        width: 100px;
+        height: 50px;
+        font-size: 10px;
     }
 }
