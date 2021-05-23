@@ -38,7 +38,6 @@ setInterval(function(){
 
 var panelNumber=3;
 var list=[
-"./test/tweetTest.html",
 "./test/tumblrTest.html",
 "./FeaturedArtHtmls/Art_001.html",
 "./FeaturedArtHtmls/Art_002.html",
@@ -62,16 +61,22 @@ var list=[
 "./FeaturedArtHtmls/Art_020.html",
 "./FeaturedArtHtmls/Art_021.html",
 "./FeaturedArtHtmls/Art_022.html",
-
+"./FeaturedArtHtmls/Art_023.html",
+"./FeaturedArtHtmls/Art_024.html",
+"./FeaturedArtHtmls/Art_025.html",
 "./FeaturedArtHtmls/Art_026.html",
+"./FeaturedArtHtmls/Art_027.html",
 
-
-"./test/tweetTest.html",
-"./test/tumblrTest.html",
 ]
-// this line finds a random number between 0 and the list length minus the duplicates. There are a total of panelNumber-1 duplicates.
-var rand= Math.floor(Math.random() * (list.length-(panelNumber-1)));
 
+
+// this line finds a random number between 0 and the list length. If using the limited number of panels, we need to have the range shrunk by 2 to avoid out of bounds exceptions when rand+1 and rand+2 are assigned
+var rand= Math.floor(Math.random() * (list.length));
+var panelspace = document.getElementById("panel0");
+panelspace.setAttribute('src', list[rand]);
+
+//this part was for when we had 3 slots and randomzied what got in there
+/*
 console.log(list.length)
 console.log(rand)
 console.log(list[rand])
@@ -85,36 +90,37 @@ for (i=0; i<panelNumber; i++){
     document.getElementById(panel).setAttribute("src", list[rand+i]);
     panel="panel"
 }
-
-
-
-
-
+*/
 
 
 //from here on testing new panel creation
 
+artIndex=rand;
+document.getElementById("btnNext").addEventListener("click", goRight);
+document.getElementById("btnPrev").addEventListener("click", goLeft);
 
-/*
-
-function onClickLeft(){
-
+function goRight(){
+    if(artIndex<list.length-1){
+        artIndex++;
+    } else {
+        artIndex=0;
+    }
+    console.log(artIndex);
+    //makeNewPanel();
+    panelspace = document.getElementById("panel0");
+    panelspace.setAttribute('src', list[artIndex]);
 }
 
-function addElement(artIndex, direction){
-    if(direction==1){
-        artIndex++;    
+function goLeft(){
+    if(artIndex==0){
+        artIndex=list.length-1;
     }
-    else{
+    else {
         artIndex--;
     }
-    const newDiv = document.createElement("div");
-    const newContent = document.createElement("iframe");
-    newContent.setAttribute('id', 'PanelMinus');
-    newContent.setAttribute('src', list[artIndex]);
-    newDiv.appendChild(newContent);
-    
-    const panel1 = document.getElementById("panel1");
-    document.body.insertBefore(newDiv, panel1);
+    console.log(artIndex);
+    //makeNewPanel();
+
+    panelspace = document.getElementById("panel0");
+    panelspace.setAttribute('src', list[artIndex]);
 }
-*/
