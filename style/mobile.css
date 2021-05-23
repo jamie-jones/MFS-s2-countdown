@@ -36,8 +36,12 @@
 
     #fanart-section{
         padding-top: 70px;
-        width: 900px;
+        /* width: 900px; */
         height: auto;
+    }
+
+    #fanart{
+        padding-left: 25%;
     }
 
     #buttons{
@@ -55,8 +59,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    body{
+        padding-top: 30px;
+    }
+
     #container{
-        padding: 20px 0px;
+        padding: 0px;
         width: 675px;
     }
 
@@ -68,20 +77,28 @@
         position: absolute;
         width: 100%;
         padding-right: 100px;
-        font-size: 100px;
+        font-size: 80px;
     }
 
     #countdown section{
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
         padding-top: 10px;
     }
 
     #fanart-section{
-        padding-top: 70px;
+        padding-top: 20px;
         padding-left: 40px;
         width: 650px;
-        /* height: auto; */
+    }
+
+    #fanart{
+        padding-top: 10px;
+        padding-left: 17%;
+    }
+
+    #buttons{
+        padding-top: 160px;
     }
 
     .button{
@@ -89,11 +106,85 @@
         height: 75px;
         font-size: 24px;
     }
+
+    #panel0, #panel1, #panel2{
+        width: 400px;
+        height: 570px;
+    }
+}
+@media only screen and (max-width: 541px) {
+
+    body{
+        padding-top: 30px;
+        padding-left: 0px;
+    }
+
+    #container{
+        padding: 0px;
+        width: 540px;
+    }
+
+    #title{
+        font-size: 50px;
+    }
+
+    #countdown{
+        position: absolute;
+        width: 100%;
+        padding-left: 50px;
+        font-size: 55px;
+    }
+
+    #countdown section{
+        line-height: 50px;
+        height: 90px;
+    }
+
+    #countdown section:before{
+        font-size: 4vw;
+    }
+
+    #fanart-section{
+        padding-top: 0px;
+        padding-left: 5px;
+        width: 540px;
+    }
+
+    #fanart{
+        padding-top: 1px;
+        padding-left: 17px;
+    }
+
+    #buttons{
+        padding-top: 130px;
+        padding-left: 90px;
+    }
+
+    .button{
+        width: 120px;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    #fanart{
+        height: 370px;
+        width: 500px;
+        padding-left: 65px;
+    }
+
+    .carousel{
+        width: 540px;
+    }
+
+    #panel0, #panel1, #panel2{
+        width: 400px;
+        height: 389px;
+    }
 }
 
 @media only screen and (max-width: 415px){
     body{
-        padding: 40px 0px;
+        padding: 20px 0px;
     }
 
     #container{
@@ -129,5 +220,224 @@
         width: 100px;
         height: 50px;
         font-size: 10px;
+    }
+
+    #fanart-section{
+        padding-top: 35px;
+        padding-left: 10px;
+        /* width: 1px; */
+        /* width: 90%; */
+    }
+
+    #fanart{
+        height: 400px;
+        width: 400px;
+        padding-left: 15px;
+    }
+
+    .carousel{
+        width: 400px;
+    }
+
+    #panel0, #panel1, #panel2{
+        width: 370px;
+        height: 570px;
+    }
+
+}
+@media only screen and (max-width: 376px){
+
+    #container{
+        padding: 10px 0px;
+        width: 375px;
+    }
+
+    #title{
+        font-size: 35px
+    }
+
+    #countdown{
+        padding-right: 0px;
+        font-size: 30px;
+    }
+
+    #countdown section{
+        width: 50px;
+        height: 40px;
+        margin: 0 5px;
+        line-height: 40px;
+    }
+
+    #countdown section:before{
+        font-size: 3.8vw;
+        height: 30px;
+        bottom: -30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    #buttons{
+        padding: 80px 0px 0px 50px;
+    }
+
+    .button{
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    #fanart-section{
+        padding-top: 35px;
+        padding-left: 5px;
+    }
+
+    #fanart{
+        height: 400px;
+        width: 400px;
+        padding-left: 20px;
+    }
+
+    .carousel{
+        width: 375px;
+    }
+
+    #panel0, #panel1, #panel2{
+        width: 330px;
+        height: 580px;
+    }
+}
+
+@media only screen and (max-width: 361px){
+
+    #fanart-section{
+        padding-top: 35px;
+        padding-left: 5px;
+    }
+
+    #fanart{
+        height: 350px;
+        width: 350px;
+        padding-left: 3px;
+    }
+
+    .carousel{
+        width: 360px;
+    }
+
+    #panel0, #panel1, #panel2{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+
+    #container{
+        padding: 10px 0px;
+        width: 320px;
+    }
+
+    #title{
+        font-size: 30px
+    }
+    
+    #countdown section{
+        width: 50px;
+        height: 40px;
+        margin: 0 5px;
+        line-height: 40px;
+    }
+
+    #countdown section:before{
+        font-size: 3.8vw;
+        height: 30px;
+        bottom: -30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    #buttons{
+        padding: 80px 0px 0px 38px;
+    }
+
+    .button{
+        width: 80px;
+        height: 35px;
+        font-size: 10px;
+    }
+    #fanart-section{
+        padding-top: 35px;
+        padding-left: 0px;
+    }
+
+    #fanart{
+        height: 320px;
+        width: 320px;
+        padding-left: 1px;
+    }
+
+    .carousel{
+        width: 320px;
+    }
+
+    #panel0, #panel1, #panel2{
+        width: 315px;
+        height: 315px;
+    }
+}
+@media only screen and (max-width: 281px){
+
+    #container{
+        padding: 30px 0px;
+        width: 280px;
+    }
+
+    #title{
+        font-size: 30px
+    }
+    
+    #countdown section{
+        width: 50px;
+        height: 40px;
+        margin: 0 5px;
+        line-height: 40px;
+    }
+
+    #countdown section:before{
+        font-size: 3.8vw;
+        height: 30px;
+        bottom: -30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    #buttons{
+        padding: 80px 0px 0px 20px;
+    }
+
+    .button{
+        width: 76px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    #fanart-section{
+        padding-top: 35px;
+        padding-left: 0px;
+    }
+
+    #fanart{
+        height: 280px;
+        width: 280px;
+        padding-left: 1px;
+    }
+
+    .carousel{
+        width: 285px;
+    }
+
+    #panel0, #panel1, #panel2{
+        width: 275px;
+        height: 315px;
     }
 }

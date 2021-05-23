@@ -1,14 +1,19 @@
 body{
     background-image: url(../images/countdown-bkgrd.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-size: 100% 100%;
-    padding: 75px 50px;
+    padding: 75px 40px;
 }
 
 #container{
     font-family: 'Girassol', cursive;
     color: white;
+    }
+
+    .arrows{
+        background-color: black!important;
+        border-radius: 50%;
     }
 
     #countdown{
@@ -56,7 +61,7 @@ body{
     }
 
 #buttons{
-    margin-left: 60px;
+    padding-left: 23%;
     text-align: justify;
     padding-top: 50px;
     }
@@ -71,8 +76,9 @@ body{
     }
 
 @media only screen and (min-width:1025px){
+
     #container{
-    padding: 10px 200px;
+    padding: 10px 0px;
     margin: auto;
     display: flex;
     font-family: 'Girassol', cursive;
@@ -105,7 +111,8 @@ body{
 
 
     #fanart{
-        height: 500px;
+        height: 600px;
+        width: 500px;
     }
 
     #fanart-info-section{
