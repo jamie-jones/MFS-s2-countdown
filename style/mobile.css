@@ -60,6 +60,12 @@
         padding-left: 0px;
     }
 
+    p{
+        text-align: center;
+        padding: 0 2px 0 10px;
+        font-size: xx-small;
+    }
+
     #container{
         padding: 10px;
         width: 100%;
@@ -303,7 +309,7 @@
 
     #panel0{
         width: 300px;
-        height:00px;
+        height:300px;
     }
 }
 
@@ -413,7 +419,7 @@
 
     #panel0{
         width: 315px;
-        height: 355px;
+        height: 335px;
     }
 }
 @media only screen and (max-width: 281px){

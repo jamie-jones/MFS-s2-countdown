@@ -11,6 +11,10 @@ body{
     color: white;
     }
 
+    p{
+       text-align: center;
+    }
+
     .arrows{
         background-color: black!important;
         border-radius: 50%;
@@ -111,11 +115,13 @@ body{
         margin: 0%;
         text-align:justify;
         display: flex;
-        /* padding-left: 80px; */
-        /* justify-content: center; */
     }
 
     .carousel{
         padding-left: 80px;
+    }
+
+    #panel0{
+        height: 610px;
     }
 }
