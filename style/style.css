@@ -75,7 +75,7 @@ body{
 
     #fanart-section{
         overflow: scroll;
-        -webkit-overflow-scrolling: touch;
+        /* -webkit-overflow-scrolling: touch; */
     }
 
     .button{
