@@ -4,6 +4,7 @@ body{
     background-attachment:fixed;
     background-size: 100% 100%;
     padding: 20px 40px;
+    overflow: none;
 }
 
 #container{
@@ -78,11 +79,13 @@ body{
         color: white;
         border-radius: 50%;
         width: 125px;
-        height: 60px;
+        height: 65px;
         margin:auto;
     }
 
     #panel0{
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         border-style:solid solid none solid;
         border-width:medium;
         border-color: rgb(55, 141, 170);
@@ -118,6 +121,9 @@ body{
         margin: 0%;
         text-align:justify;
         display: flex;
+    }
+    #fanart{
+        width: 90%;
     }
 
     .carousel{
