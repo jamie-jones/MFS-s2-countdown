@@ -73,12 +73,16 @@ body{
         padding-top: 50px;
     }
 
+    #fanart-section{
+        overflow: scroll;
+    }
+
     .button{
         background-color: rgb(41,75,85);
         color: white;
         border-radius: 50%;
         width: 125px;
-        height: 60px;
+        height: 65px;
         margin:auto;
     }
 
