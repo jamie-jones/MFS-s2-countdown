@@ -7,7 +7,7 @@ console.log(premiereDate)
 let countdown = function(){
     // rightNow will be the current date and time
     let rightNow = new Date
-    console.log(rightNow)
+    // console.log(rightNow)
     // inBetween is the amount of time between the premiere and the current time
     let inBetween = premiereDate - rightNow;
 
@@ -72,6 +72,16 @@ var list=[
 "./FeaturedArtHtmls/Art_030.html",
 "./FeaturedArtHtmls/Art_031.html",
 "./FeaturedArtHtmls/Art_032.html",
+"./FeaturedArtHtmls/Art_033.html",
+"./FeaturedArtHtmls/Art_034.html",
+"./FeaturedArtHtmls/Art_035.html",
+"./FeaturedArtHtmls/Art_036.html",
+"./FeaturedArtHtmls/Art_037.html",
+"./FeaturedArtHtmls/Art_038.html",
+"./FeaturedArtHtmls/Art_039.html",
+"./FeaturedArtHtmls/Art_040.html",
+"./FeaturedArtHtmls/Art_041.html",
+"./FeaturedArtHtmls/Art_042.html",
 
 ]
 
