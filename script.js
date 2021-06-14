@@ -86,6 +86,11 @@ var list=[
 "./FeaturedArtHtmls/Art_044.html",
 "./FeaturedArtHtmls/Art_045.html",
 "./FeaturedArtHtmls/Art_046.html",
+"./FeaturedArtHtmls/Art_047.html",
+"./FeaturedArtHtmls/Art_048.html",
+"./FeaturedArtHtmls/Art_049.html",
+"./FeaturedArtHtmls/Art_050.html",
+"./FeaturedArtHtmls/Art_051.html",
 
 ]
 
