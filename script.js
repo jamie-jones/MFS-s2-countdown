@@ -1,5 +1,5 @@
 // getTime() returned the number of miliseconds since the Unix Epoch (Jan 1, 1970 00:00:00 GMT)
-const premiereDate = new Date("June 22, 21 21:00:00 EST").getTime()
+const premiereDate = new Date("June 29, 21 21:00:00 EST").getTime()
 
 console.log(premiereDate)
 
@@ -99,23 +99,6 @@ var list=[
 var rand= Math.floor(Math.random() * (list.length));
 var panelspace = document.getElementById("panel0");
 panelspace.setAttribute('src', list[rand]);
-
-//this part was for when we had 3 slots and randomzied what got in there
-/*
-console.log(list.length)
-console.log(rand)
-console.log(list[rand])
-
-panel="panel"
-
-var i=0
-for (i=0; i<panelNumber; i++){
-    panel=panel.concat(i);
-    console.log(panel);
-    document.getElementById(panel).setAttribute("src", list[rand+i]);
-    panel="panel"
-}
-*/
 
 
 //from here on testing new panel creation
