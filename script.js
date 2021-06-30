@@ -1,5 +1,5 @@
 // getTime() returned the number of miliseconds since the Unix Epoch (Jan 1, 1970 00:00:00 GMT)
-const premiereDate = new Date("June 29, 21 21:00:00 EST").getTime()
+const premiereDate = new Date("July 6, 21 21:00:00 EST").getTime()
 
 console.log(premiereDate)
 
