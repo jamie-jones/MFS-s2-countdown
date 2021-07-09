@@ -36,10 +36,6 @@ let countdown = function(){
 }
 setInterval(function(){
     countdown();
-    // this odesn't work yet
-    // if(countdown>premiereDate){
-    //     clearInterval(countdown)
-    // }
 },1000)
 
 
