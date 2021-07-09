@@ -1,7 +1,9 @@
-// getTime() returned the number of miliseconds since the Unix Epoch (Jan 1, 1970 00:00:00 GMT)
-const premiereDate = new Date("July 6, 21 21:00:00 EST").getTime()
+// const { count } = require("console");
 
-console.log(premiereDate)
+// getTime() returned the number of miliseconds since the Unix Epoch (Jan 1, 1970 00:00:00 GMT)
+const premiereDate = new Date("July 13, 21 22:00:00 EST").getTime()
+
+// console.log(premiereDate)
 
 
 let countdown = function(){
@@ -30,7 +32,7 @@ let countdown = function(){
     document.getElementById("day").innerText = dys
     document.getElementById("hr").innerText = hrs
     document.getElementById("min").innerText = mins
-    document.getElementById("sec").innerText = secs
+    document.getElementById("sec").innerText = secs    
 }
 setInterval(function(){
     countdown();
