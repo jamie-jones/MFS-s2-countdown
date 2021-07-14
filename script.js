@@ -1,13 +1,13 @@
 // getTime() returned the number of miliseconds since the Unix Epoch (Jan 1, 1970 00:00:00 GMT)
-const premiereDate = new Date("July 13, 21 22:00:00 EST").getTime()
+const premiereDate = new Date("July 13, 21 21:00:00 EST").getTime()
 
-const episodeDates = [new Date("July 13, 21 22:00:00 EST").getTime(),
-    new Date("July 20, 21 22:00:00 EST").getTime(),
-    new Date("July 27, 21 22:00:00 EST").getTime(),
-    new Date("August 03, 21 22:00:00 EST").getTime(),
-    new Date("August 10, 21 22:00:00 EST").getTime(),
-    new Date("August 17, 21 22:00:00 EST").getTime(),
-    new Date("August 24, 21 22:00:00 EST").getTime()]
+const episodeDates = [new Date("July 13, 21 21:00:00 EST").getTime(),
+    new Date("July 20, 21 21:00:00 EST").getTime(),
+    new Date("July 27, 21 21:00:00 EST").getTime(),
+    new Date("August 03, 21 21:00:00 EST").getTime(),
+    new Date("August 10, 21 21:00:00 EST").getTime(),
+    new Date("August 17, 21 21:00:00 EST").getTime(),
+    new Date("August 24, 21 21:00:00 EST").getTime()]
 
 // console.log(premiereDate)
 
