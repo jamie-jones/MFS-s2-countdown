@@ -1,39 +1,98 @@
-// const { count } = require("console");
-
 // getTime() returned the number of miliseconds since the Unix Epoch (Jan 1, 1970 00:00:00 GMT)
 const premiereDate = new Date("July 13, 21 22:00:00 EST").getTime()
 
+const episodeDates = [new Date("July 13, 21 22:00:00 EST").getTime(),
+    new Date("July 20, 21 22:00:00 EST").getTime(),
+    new Date("July 27, 21 22:00:00 EST").getTime(),
+    new Date("August 03, 21 22:00:00 EST").getTime(),
+    new Date("August 10, 21 22:00:00 EST").getTime(),
+    new Date("August 17, 21 22:00:00 EST").getTime(),
+    new Date("August 24, 21 22:00:00 EST").getTime()]
+
 // console.log(premiereDate)
 
+const stopCountdown = function() {
+    document.getElementById("day").innerText = "00"
+    document.getElementById("hr").innerText = "00"
+    document.getElementById("min").innerText = "00"
+    document.getElementById("sec").innerText = "00"
+}
 
+let rightNow = new Date
+
+// the function holds a for loop
 let countdown = function(){
-    // rightNow will be the current date and time
-    let rightNow = new Date
-    // console.log(rightNow)
-    // inBetween is the amount of time between the premiere and the current time
-    let inBetween = premiereDate - rightNow;
 
-    // variables of the out of miliseconds, seconds, etc. in the sec, min, hour, and day
-    const second = 1000
-    const minute = second * 60
-    const hour = minute * 60
-    const days = hour * 24
+    // this for loop loops over the episodeDates array
+    for(let i=0; i<episodeDates.length; i++){
+        // the if/else statement says that if the episodeDate element is greater than the current date/time...
+        if(episodeDates[i]>=rightNow){
+            // the setNewDate function will go to the next date from the array.
+            setNewDate(episodeDates[i])
+            // break stops the for loop
+            break;
+        }
+    } 
+}
 
-    // math.floor rounds down to the nearest integer
-    // we then do math
+// this function takes a parameter of dateToBeSet, which equals an element from episodeDates as seen in countdown() 
+const setNewDate = function(dateToBeSet){
+
+    rightNow = new Date
+    let inBetween = dateToBeSet - rightNow;
+
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const days = hour * 24;
+
     const secs = Math.floor((inBetween % minute) / second)
     const mins = Math.floor((inBetween % hour) / minute)
     const hrs = Math.floor((inBetween % days) / hour)
     const dys = Math.floor(inBetween / days)
 
-    // console.log(dys, hrs, mins, secs)
-
-    // grab the ID from the html and input the countdown through the text
     document.getElementById("day").innerText = dys
     document.getElementById("hr").innerText = hrs
     document.getElementById("min").innerText = mins
-    document.getElementById("sec").innerText = secs    
+    document.getElementById("sec").innerText = secs   
 }
+setInterval(function(){
+    countdown();
+},1000)
+
+
+// let countdown = function(){
+//     // rightNow will be the current date and time
+//     let rightNow = new Date
+//     // console.log(rightNow)
+//     // inBetween is the amount of time between the premiere and the current time
+//     let inBetween = premiereDate - rightNow;
+
+//     // variables of the out of miliseconds, seconds, etc. in the sec, min, hour, and day
+//     const second = 1000
+//     const minute = second * 60
+//     const hour = minute * 60
+//     const days = hour * 24
+
+//     // math.floor rounds down to the nearest integer
+//     // we then do math
+//     const secs = Math.floor((inBetween % minute) / second)
+//     const mins = Math.floor((inBetween % hour) / minute)
+//     const hrs = Math.floor((inBetween % days) / hour)
+//     const dys = Math.floor(inBetween / days)
+
+//     // console.log(dys, hrs, mins, secs)
+
+//     // grab the ID from the html and input the countdown through the text
+//     document.getElementById("day").innerText = dys
+//     document.getElementById("hr").innerText = hrs
+//     document.getElementById("min").innerText = mins
+//     document.getElementById("sec").innerText = secs    
+
+//     if(rightNow >= premiereDate){
+//         stopCountdown()
+//     }
+// }
 setInterval(function(){
     countdown();
 },1000)
