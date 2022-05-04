@@ -1,12 +1,12 @@
 {
-    "name": "MFScountdown",
-    "version": "1.0.0",
-    "description": "The countdown to the season 2 premiere of Motherland: Fort Salem",
-    "main": "server.js",
-    "dependencies": {
-      "express": "^4.16.3"
-    },
-    "scripts": {
-      "start":"node server.js"
-    },
+  "name": "MFScountdown",
+  "version": "1.0.0",
+  "description": "The countdown to the season 3 premiere of Motherland: Fort Salem",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
+}
